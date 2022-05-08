@@ -1,0 +1,24 @@
+$bg-color: #19191a;
+$text-color: #e7e7e9;
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('./fonts/Questrial-Regular.ttf');
+}
+
+html {
+  font-family: 'Questrial', sans-serif;
+}
+
+body {
+  background-color: $bg-color;
+  margin: 0;
+}
+
+p, h1, h2, h3 {
+  color: $text-color;
+}
+
+.big-title {
+  font-size: 6em;
+}
