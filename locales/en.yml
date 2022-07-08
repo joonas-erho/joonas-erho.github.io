@@ -5,14 +5,11 @@ button:
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
 not-found: Not found
 
 about-me: About me
 my-projects: My projects
 cv: CV
+
+short-bio: I was born in 1999 in Central Finland where I have lived my whole life so far. I first became interested in programming in 2012 when I took a game making summer course with my friend at the University of Jyväskylä. After years of programming games and various useless programs, I ended up studying computer science at the same university in 2019. As of today, my bachelor's degree is nearly done and I have racked roughly two years of software development experience during my studies.
+short-bio-b: I am an aspiring software developer who is very interested in all aspects of software development and the themes and techonologies around it. To learn more about what I have already learned and what skills I have garnered, please take a look at the projects I've worked on and my CV.

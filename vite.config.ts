@@ -131,6 +131,15 @@ export default defineConfig({
     Inspect(),
   ],
 
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @import "~/styles/_variables.scss";`,
+      },
+    },
+  },
+
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     script: 'async',
