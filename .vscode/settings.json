@@ -13,5 +13,8 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "i18n-ally.extract.ignored": [
+    "Joonas Erho"
+  ]
 }

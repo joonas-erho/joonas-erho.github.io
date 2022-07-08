@@ -1,4 +1,4 @@
-@import './markdown.css';
+@import './markdown.scss';
 
 html,
 body,
@@ -9,7 +9,7 @@ body,
 }
 
 html.dark {
-  background: #121212;
+  background: #252525;
 }
 
 #nprogress {

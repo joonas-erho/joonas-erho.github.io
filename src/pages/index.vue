@@ -3,6 +3,6 @@
 
 <template>
   <div>
-    asdsad
+    <Greeting class="pt-10" />
   </div>
 </template>
