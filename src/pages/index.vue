@@ -5,11 +5,41 @@ const { t } = useI18n()
 <template>
   <div>
     <Greeting class="pt-10" />
-    <p class="large-title">
-      {{ t('about-me') }}
-    </p>
-    <p>
-      {{ t('short-bio') }}
-    </p>
+    <div class="sect">
+      <p class="large-title">
+        {{ t('about-me') }}
+      </p>
+      <p>
+        {{ t('short-bio') }}
+      </p>
+      <p>
+        {{ t('short-bio-b') }}
+      </p>
+    </div>
+    <div class="sect">
+      <p class="large-title">
+        {{ t('my-projects') }}
+      </p>
+    </div>
+    <div class="sect">
+      <p class="large-title">
+        {{ t('cv') }}
+      </p>
+      <NButton type="primary">
+        {{ t('cv-button') }}
+      </NButton>
+    </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+.sect {
+  margin-top: 2em;
+  max-width: $max-width;
+  margin: auto;
+
+  p {
+    margin-top: 2em;
+  }
+}
+</style>

@@ -4,8 +4,9 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <main p="x4 y10" text="center teal-700 dark:gray-200">
-    <div text-4xl>
+  <main class="text-center text-gray-700 dark:text-gray-200">
+    <Header />
+    <div text-4xl mt-25>
       <div i-carbon-warning inline-block />
     </div>
     <RouterView />
@@ -14,5 +15,6 @@ const { t } = useI18n()
         {{ t('button.back') }}
       </button>
     </div>
+    <Footer />
   </main>
 </template>

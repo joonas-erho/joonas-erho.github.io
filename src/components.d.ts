@@ -9,8 +9,11 @@ declare module '@vue/runtime-core' {
     Greeting: typeof import('./components/Greeting.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     NAvatar: typeof import('naive-ui')['NAvatar']
+    NButton: typeof import('naive-ui')['NButton']
     NGrid: typeof import('naive-ui')['NGrid']
     NGridItem: typeof import('naive-ui')['NGridItem']
+    ProjectCard: typeof import('./components/projects/ProjectCard.vue')['default']
+    ProjectsDisplay: typeof import('./components/projects/ProjectsDisplay.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

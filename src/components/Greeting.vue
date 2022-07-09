@@ -7,7 +7,7 @@
       <p class="greeting-text">
         Hi, my name is Joonas.
       </p>
-      <p class="subtext">
+      <p class="subtext mt-6">
         I am an aspiring computer science student and software developer from Finland.
       </p>
     </NGridItem>
@@ -25,6 +25,7 @@
 .greeting-text {
   font-size: 4em;
   font-weight: 600;
+  line-height: 1.25em;
 }
 
 .subtext {
