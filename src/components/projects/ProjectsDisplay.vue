@@ -8,17 +8,53 @@ const projects = [
     name: 'Bittiliiga Webpage',
     images: ['assets/images/avatar.png'],
     years: '2019-2021',
-    typeTags: ['Work', 'With a team'],
-    techTags: ['Vue.js', 'Nuxt.js'],
-    shortDesc: 'I did stuff!',
+    typeTags: [
+      {
+        text: 'Work',
+        color: '#be43aa',
+      },
+      {
+        text: 'Solo',
+        color: '#be4300',
+      },
+    ],
+    techTags: [
+      {
+        text: 'Vue.js',
+        color: '#be43aa',
+      },
+      {
+        text: 'Nuxt.js',
+        color: '#be4300',
+      },
+    ],
+    shortDesc: 'I created and maintained the webpages for Bittiliiga using Vue and Nuxt.js.',
   },
   {
     name: 'Bittiliiga Platform',
     images: ['assets/images/avatar.png'],
     years: '2019-2022',
-    typeTags: ['Work', 'With a team'],
-    techTags: ['Vue.js', 'Nuxt.js'],
-    shortDesc: 'I did stuff!',
+    typeTags: [
+      {
+        text: 'Work',
+        color: '#be43aa',
+      },
+      {
+        text: 'As a team',
+        color: '#be4300',
+      },
+    ],
+    techTags: [
+      {
+        text: 'Vue.js',
+        color: '#be43aa',
+      },
+      {
+        text: 'Nuxt.js',
+        color: '#be4300',
+      },
+    ],
+    shortDesc: 'I worked on the Bittiliiga game platform as a part of team, working mainly on the front-end of the platform.',
   },
 ]
 </script>

@@ -24,14 +24,23 @@ const props = defineProps<{
       <p class="title">
         {{ project.name }}
       </p>
-      <Chip :text="project.years" color="#242543" />
+      <div class="type-chips">
+        <Chip :text="project.years" color="#242543" />
+        <Chip v-for="type in project.typeTags" :key="type.text" :text="type.text" :color="type.color" />
+      </div>
+      <p class="short-desc">
+        {{ project.shortDesc }}
+      </p>
+      <div class="type-chips">
+        <Chip v-for="tech in project.techTags" :key="tech.text" :text="tech.text" :color="tech.color" />
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .base {
-  height: 500px;
+  height: 450px;
   width: 400px;
   background-color: rgb(57, 57, 61);
   box-shadow: 3px 3px 5px #141414;
@@ -41,7 +50,7 @@ const props = defineProps<{
 }
 
 .carousel-style {
-  height: 225px;
+  height: 200px;
 }
 
 .text-area {
@@ -49,8 +58,22 @@ const props = defineProps<{
 }
 
 .title {
-  text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
+  margin-left: 0.1em;
+}
+
+.type-chips {
+  margin-top: 0.2em;
+
+  * {
+    margin-right: 5px;
+  }
+}
+
+.short-desc {
+  margin-left: 0.2em;
+  margin-top: 0.75em;
+  font-size: 1.1em;
 }
 </style>
