@@ -4,8 +4,12 @@ const props = defineProps<{
     name: string
     images: string[]
     years: string
-    typeTags: string[]
-    techTags: string[]
+    typeTags: {
+      text: string
+      color: string }[]
+    techTags: {
+      text: string
+      color: string }[]
     shortDesc: string
   }
 }>()
@@ -20,7 +24,7 @@ const props = defineProps<{
       <p class="title">
         {{ project.name }}
       </p>
-      {{ project.years }}
+      <Chip :text="project.years" color="#242543" />
     </div>
   </div>
 </template>
