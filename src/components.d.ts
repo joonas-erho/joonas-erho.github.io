@@ -5,11 +5,13 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Chip: typeof import('./components/Chip.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Greeting: typeof import('./components/Greeting.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     NAvatar: typeof import('naive-ui')['NAvatar']
     NButton: typeof import('naive-ui')['NButton']
+    NCarousel: typeof import('naive-ui')['NCarousel']
     NGrid: typeof import('naive-ui')['NGrid']
     NGridItem: typeof import('naive-ui')['NGridItem']
     ProjectCard: typeof import('./components/projects/ProjectCard.vue')['default']

@@ -21,12 +21,13 @@ const router = useRouter()
       <p class="large-title">
         {{ t('my-projects') }}
       </p>
+      <ProjectsDisplay :show-full="false" />
     </div>
     <div class="sect">
       <p class="large-title">
         {{ t('cv') }}
       </p>
-      <NButton type="primary" class="link-button mt-8" @click="router.push('/cv')">
+      <NButton type="primary" class="link-button" @click="router.push('/cv')">
         {{ t('cv-button') }}
         <div i-carbon-arrow-right class="ml-3 -mr-2" />
       </NButton>
