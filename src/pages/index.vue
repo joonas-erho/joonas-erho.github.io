@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const router = useRouter()
 </script>
 
 <template>
@@ -25,8 +26,9 @@ const { t } = useI18n()
       <p class="large-title">
         {{ t('cv') }}
       </p>
-      <NButton type="primary">
+      <NButton type="primary" class="link-button mt-8" @click="router.push('/cv')">
         {{ t('cv-button') }}
+        <div i-carbon-arrow-right class="ml-3 -mr-2" />
       </NButton>
     </div>
   </div>
